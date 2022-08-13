@@ -1,0 +1,94 @@
+<!-- 
+
+content
+
+
+   1. get elementbytagname()
+
+   2.  getelementbyID()
+   3. getelementsbyclassname()
+   4. quarryselectorall()
+   5. quarryselector()
+   6.for of 
+   7.innerText
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script dom</title>
+</head>
+
+<style>
+    ul li {
+
+
+        color: yellowgreen;
+    }
+
+    h1 {
+
+        color: blue;
+
+    }
+</style>
+
+<body>
+
+    <section>
+        <h1>school</h1>
+        <ul class="first-tag">
+            <li>bangla</li>
+            <li>English</li>
+            <li>mathmatic</li>
+            <li>biology</li>
+        </ul>
+    </section>
+    <section>
+
+        <h1>college</h1>
+        <ul class="first-tag">
+            <li>higher math</li>
+            <li>English</li>
+            <li>itihash</li>
+            <li>ICT</li>
+            <li>chemistry</li>
+        </ul>
+    </section>
+
+    <section id="depertment">
+        <h1>University</h1>
+        <ul class="first-tag">
+            <li>CSE</li>
+            <li>EEE</li>
+            <li>Low</li>
+            <li>Textyle</li>
+            <li>English</li>
+        </ul>
+    </section>
+
+    <script>
+        const alllitext = document.getElementsByClassName('first-tag');
+        for (const li of alllitext) {
+            console.log(li.innerText)
+        }
+
+        const someitem = document.querySelectorAll('#depertment');
+        // console.log(someitem);
+
+        for (let li of someitem) {
+
+            console.log(li.innerText);
+        }
+    </script>
+
+</body>
+
+</html>
